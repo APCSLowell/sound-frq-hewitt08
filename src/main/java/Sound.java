@@ -43,7 +43,7 @@ public class Sound
       zeros++;
     }
     int[] newSamples = new int[samples.length-zeros];
-    for(int i = 0; i < samples.length; i++){
+    for(int i = 0; i < newSamples.length; i++){
       newSamples[i]=samples[i+zeros];
     }
     samples = newSamples;
